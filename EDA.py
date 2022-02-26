@@ -1,7 +1,11 @@
+import itertools import groupby
 import numpy as np
 import pandas as pd
 import csv
 import matplotlib.pyplot as plt
+
+TV=pd.read_csv(r'C:\Users\kevin\OneDrive\Documents\BZAN_544_Decision_Support\final_project\TV_Ratings_onesheet.csv')#Kevin 
+GAMES=pd.read_csv(r'C:\Users\kevin\OneDrive\Documents\BZAN_544_Decision_Support\final_project\games_flat_xml_2012-2018.csv') #Kevin
 
 TV=pd.read_csv('TV_Ratings_onesheet.csv')
 TV.head()
@@ -28,3 +32,28 @@ plt.xticks(rotation = 90)
 plt.title('TV ratings per viewers')
 plt.show()
 #Shows that ratings and viewers are directly related
+
+#Total Tv viewership by network
+plt.bar(TV['Network'], TV['VIEWERS'])
+plt.title('Total TV viewership by network')
+plt.show()
+
+#Which networks have the most games
+plt.bar(TV['Network'], TV['GAME'])
+plt.title('Which networks have the most games')
+plt.show()
+
+
+
+#which Networks get the higest rating games
+#TV['RATING2'] = filter(TV.where(TV['RATING'] > 3))
+
+#TV['RATING3'] = TV['RATING']>3
+#TV['RATING3'].astype(int)
+
+
+#Total Tv viewership by network
+# plt.bar(TV['Network'], TV['RATING'].mean())
+# plt.bar(TV['Network'], TV['RATING3'].count())
+# plt.title('Total TV viewership by network')
+# plt.show()
