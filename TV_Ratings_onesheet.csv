@@ -1,4 +1,4 @@
-Date,GAME,GameID,Visitor Team,Home Team,VisTeamID,HomeTeamID,RATING,VIEWERS,Network,TeamIDsDate
+Date,GAME,GameID,Visitor Team,Home_Team,VisTeamID,HomeTeamID,RATING,VIEWERS,Network,TeamIDsDate
 9/22/2018,Texas A&M @ Alabama,Texas A&M-Alabama09-22-2018,Texas A&M,Alabama,TAMU,UA,3.4,5710000,CBS,TAMU@UA09-22-2018
 11/10/2018,Mississippi State @ Alabama,Mississippi State-Alabama11-10-2018,Mississippi State,Alabama,MS,UA,3.3,5460000,CBS,MS@UA11-10-2018
 11/24/2018,Auburn @ Alabama,Auburn-Alabama11-24-2018,Auburn,Alabama,AU,UA,5.1,9130000,CBS,AU@UA11-24-2018
